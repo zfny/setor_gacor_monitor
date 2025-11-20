@@ -135,7 +135,7 @@ const ReportForm = () => {
                             onChange={handleChange}
                             className="mr-2"
                           />
-                          <span className="text-white">Pria</span>
+                          <span className="text-black">Pria</span>
                         </label>
                         <label className="flex items-center">
                           <input
@@ -146,7 +146,7 @@ const ReportForm = () => {
                             onChange={handleChange}
                             className="mr-2"
                           />
-                          <span className="text-white">Wanita</span>
+                          <span className="text-black">Wanita</span>
                         </label>
                       </div>
                     </div>

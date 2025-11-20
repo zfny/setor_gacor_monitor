@@ -102,7 +102,7 @@ export default function Home() {
                 <img
                   src={ellipseBackground}
                   alt="Background ellipse"
-                  className="rounded-lg shadow-xl mx-auto absolute"
+                  className="rounded-lg mx-auto absolute"
                   style={{ width: '500px', height: '700px', zIndex: 0, right: '70px' }}
                 />
                 {/* Adding the logo behind the main image */}
@@ -110,14 +110,14 @@ export default function Home() {
                   <img
                     src={logoWhite}
                     alt="SETOR Logo"
-                    className="w-full h-full object-contain opacity-30 blur"
+                    className="w-full h-full object-contain opacity-70 blur"
                   />
                 </div>
                 {/* Main image */}
                 <img
                   src={backgroundImage}
                   alt="Person with bandaged arm"
-                  className="rounded-lg shadow-xl mx-auto relative bg-opacity-0"
+                  className="rounded-lg mx-auto relative bg-opacity-0"
                   style={{ width: '420px', height: '600px', zIndex: 10, top: '20px' }}
                 />
                 <div className="absolute top-48 right-20 bg-black bg-opacity-40 p-4 rounded-lg z-20 text-center">
@@ -137,7 +137,7 @@ export default function Home() {
                   <img
                     src={logoWhite}
                     alt="SETOR Logo"
-                    className="w-full h-full object-contain opacity-30 blur"
+                    className="w-full h-full object-contain opacity-70 blur"
                   />
                 </div>
               </div>
@@ -176,7 +176,7 @@ export default function Home() {
       <section id="contact" className="py-16 px-6 bg-gradient-to-br from-green-800 to-green-900">
         <div className="container mx-auto relative">
           {/* Logo di kiri atas */}
-          <div className="absolute top-20 -left-4 w-45 h-45 z-0 opacity-20 skew-x-12 blur">
+          <div className="absolute top-20 -left-4 w-45 h-45 z-0 opacity-70 skew-x-12 blur">
             <img
               src={logoWhite}
               alt="SETOR Logo"
@@ -184,13 +184,23 @@ export default function Home() {
             />
           </div>
           {/* Logo di kanan bawah */}
-          <div className="absolute bottom-4 left-96 w-50 h-50 z-0 opacity-20 -skew-x-12 blur">
+          <div className="absolute bottom-4 left-96 w-50 h-50 z-0 opacity-70 -skew-x-12 blur">
             <img
               src={logoWhite}
               alt="SETOR Logo"
               className="w-full h-full object-contain"
             />
           </div>
+
+          {/* Instagram icon di kanan bawah */}
+          <div className="absolute -bottom-20 right-4 z-10">
+            <img
+              src={instagramIcon}
+              alt="Instagram"
+              className="w-60 h-60 blur opacity-70"
+            />
+          </div>
+
           <div className="text-center">
             <div className="mb-8">
               <div className="text-3xl md:text-4xl font-serif italic bg-gradient-to-r from-pink-400 to-white bg-clip-text text-transparent">
@@ -201,7 +211,7 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="flex flex-col md:flex-row items-center gap-8 mt-12">
+            <div className="flex flex-col md:flex-row items-center gap-8 mt-12 justify-center">
               <div className="md:w-1/2 relative">
                 <img
                   src={teamImage}
@@ -210,7 +220,7 @@ export default function Home() {
                 />
               </div>
 
-              <div className="md:w-1/2 ml-24">
+              <div className="md:w-1/2 ml-16">
                 <h3 className="text-5xl font-bold text-left mb-6">Contact Us</h3>
                 <div className="space-y-4 pl-1">
                   <div className="flex items-center gap-3">
