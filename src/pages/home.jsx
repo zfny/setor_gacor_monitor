@@ -104,6 +104,14 @@ export default function Home() {
                   className="rounded-lg shadow-xl mx-auto absolute"
                   style={{ width: '444px', height: '637px', zIndex: 0, right: '70px' }}
                 />
+                {/* Adding the logo behind the main image */}
+                <div className="absolute -top-0 -left-0 w-50 h-50 z-0 -skew-x-12">
+                  <img
+                    src={logoWhite}
+                    alt="SETOR Logo"
+                    className="w-full h-full object-contain opacity-30 blur"
+                  />
+                </div>
                 {/* Main image */}
                 <img
                   src={backgroundImage}
@@ -117,21 +125,14 @@ export default function Home() {
                 </div>
                 {/* Moving the "Jaminan laporan tersampaikan kepada pemerintah" text below the left side of the image and with black background */}
                 <div className="absolute -bottom-10 left-4 bg-black bg-opacity-40 p-4 rounded-lg max-w-xs z-20">
-                  <p className="text-l text-white font-bold">Jaminan laporan tersampaikan kepada pemerintah</p>
+                  <p className="text-xl text-white font-bold">Jaminan laporan tersampaikan kepada pemerintah</p>
                 </div>
-                {/* Adding the logo */}
-                <div className="absolute -bottom-0 -right-0 w-40 h-40 z-0">
+                {/* Moving the other logo to the bottom right */}
+                <div className="absolute -bottom-0 -right-0 w-50 h-50 z-0 -skew-x-12">
                   <img
                     src={logoWhite}
                     alt="SETOR Logo"
-                    className="w-full h-full object-contain opacity-30"
-                  />
-                </div>
-                <div className="absolute -top-0 -left-0 w-40 h-40 z-10">
-                  <img
-                    src={logoWhite}
-                    alt="SETOR Logo"
-                    className="w-full h-full object-contain opacity-30"
+                    className="w-full h-full object-contain opacity-30 blur"
                   />
                 </div>
               </div>
@@ -196,7 +197,7 @@ export default function Home() {
                 />
               </div>
 
-              <div className="md:w-1/2">
+              <div className="md:w-1/2 ml-24">
                 <h3 className="text-5xl font-bold text-left mb-6">Contact Us</h3>
                 <div className="space-y-4 pl-1">
                   <div className="flex items-center gap-3">
