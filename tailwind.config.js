@@ -2,7 +2,15 @@
 module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}",],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        'custom-green': '#1A472B',
+      },
+      fontFamily: {
+        'la-belle-aurore': ['"La Belle Aurore"', 'cursive'],
+        'poppins': ['"Poppins"', 'sans-serif'],
+      }
+    },
   },
   plugins: [],
 }

@@ -36,3 +36,7 @@
     transform: rotate(360deg);
   }
 }
+
+.font-la-belle-aurore {
+  font-family: 'La Belle Aurore', cursive;
+}

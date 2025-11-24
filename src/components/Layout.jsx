@@ -26,7 +26,7 @@ const Layout = ({ children }) => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-green-800 to-green-600 text-white">
       {/* NAVBAR */}
-      <header className="bg-[#255F3B] sticky top-0 z-50 shadow-md">
+      <header className="bg-[#255F3B] sticky top-0 z-50 shadow-lg shadow-black/30">
         <div className="container mx-auto px-4 py-4 flex justify-between items-center">
 
           <div className="flex items-center space-x-2">
@@ -49,7 +49,7 @@ const Layout = ({ children }) => {
                     ? 'bg-white text-pink-500 font-semibold'
                     : location.pathname === item.path
                       ? 'bg-white text-green-800 font-semibold'
-                      : 'hover:bg-green-800'
+                      : 'hover:bg-green-600'
                 }`}
               >
                 {item.label}
@@ -70,7 +70,7 @@ const Layout = ({ children }) => {
 
         {/* Mobile Navigation */}
         {isMenuOpen && (
-          <div className="md:hidden py-4 border-t border-[#255F3B] bg-[#255F3B] shadow-md">
+          <div className="md:hidden py-4 border-t border-[#255F3B] bg-[#255F3B] shadow-lg shadow-black/30">
             <div className="flex flex-col space-y-4 px-4">
               {navItems.map((item) => (
                 <Link
@@ -81,7 +81,7 @@ const Layout = ({ children }) => {
                       ? 'bg-white text-pink-500 font-semibold'
                       : location.pathname === item.path
                         ? 'bg-white text-[#255F3B] font-semibold'
-                        : 'hover:bg-amber-200'
+                        : 'hover:bg-green-600'
                   }`}
                   onClick={() => setIsMenuOpen(false)}
                 >
@@ -97,7 +97,7 @@ const Layout = ({ children }) => {
       <main>{children}</main>
 
       {/* FOOTER */}
-      <footer className="bg-[#255F3B] py-6 px-4 shadow-[0_-4px_6px_-1px_rgba(0,0,0,0.1)]">
+      <footer className="bg-[#255F3B] py-6 px-4 shadow-[0_-80px_80px_32px_rgba(0,0,0,0.15)]">
         <div className="container mx-auto text-center">
           <p className="text-sm opacity-80">
             © 2025 SETOR – Sehat Monitor. All rights reserved.

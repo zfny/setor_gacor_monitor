@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import groupImage from '../Asset/Group 77 (1).png';
+import ellipseImage from '../Asset/Ellipse 1.png';
 
 const ReportForm = () => {
   const navigate = useNavigate();
@@ -41,14 +43,17 @@ const ReportForm = () => {
   };
 
   return (
-    <div className="min-h-screen bg-green-900 text-white font-sans">
+    <div className="min-h-screen bg-custom-green text-white font-sans relative">
+      <div className="absolute inset-0 z-0 overflow-hidden">
+        <img src={groupImage} alt="Group" className="w-[1400px] h-[500px] object-cover opacity-100" style={{transform: 'translateY(180px)'}}/>
+      </div>
       {/* Main Content */}
       <main className="py-12 px-6">
-        <div className="container mx-auto">
+        <div className="container mx-auto relative z-10">
           <h1 className="text-3xl md:text-4xl font-bold text-pink-300 text-center mb-8">
             Laporkan Keluhan Anda!
           </h1>
-          
+
           <div className="max-w-4xl mx-auto bg-green-50 rounded-xl p-8 shadow-lg">
             <form onSubmit={handleSubmit}>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
